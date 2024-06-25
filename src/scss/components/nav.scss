@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+nav {
+  a {
+    margin-bottom: 10px;
+    &.active {
+      font-weight: 500;
+      color: map-get($colors, "red");
+    }
+  }
+}

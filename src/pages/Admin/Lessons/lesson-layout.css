@@ -1,0 +1,5 @@
+.lesson-nav{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}

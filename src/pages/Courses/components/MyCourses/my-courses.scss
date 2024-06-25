@@ -1,0 +1,11 @@
+.courses {
+  margin: 30px 0;
+}
+.course__header {
+  margin: 16px 0;
+}
+.courses__list {
+  & > * {
+    margin-bottom: 32px;
+  }
+}

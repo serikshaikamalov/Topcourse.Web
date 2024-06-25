@@ -1,0 +1,16 @@
+.admin-layout main {
+  display: flex;
+}
+
+.admin-layout nav {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 0;
+}
+
+.admin-content {
+  flex: 1;
+}

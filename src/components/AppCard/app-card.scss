@@ -1,0 +1,8 @@
+.app-card {
+  border-radius: 7px; 
+
+  &.blue {
+    background-color: var(--bs-light-info-rgb);
+    color: var(--text-primary);
+  }
+}

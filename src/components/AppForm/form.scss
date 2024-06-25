@@ -1,0 +1,19 @@
+input {
+  padding: 5px;
+  color: inherit;
+}
+
+input::disabled {
+  color: inherit;
+}
+
+.form-input {
+  margin: 16px 0;
+}
+
+.form-input__label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: inherit;
+  opacity: 0.6;
+}

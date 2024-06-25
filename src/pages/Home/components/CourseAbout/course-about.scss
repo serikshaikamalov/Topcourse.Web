@@ -1,0 +1,10 @@
+
+.course-about{
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .course-about{
+        padding: 2rem 0;
+    }
+}

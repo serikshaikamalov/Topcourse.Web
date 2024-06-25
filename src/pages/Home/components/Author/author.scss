@@ -1,0 +1,40 @@
+.author__inner {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.author__intro {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.author__advantages {
+  & > div {
+    line-height: 30px;
+  }
+}
+
+.author__photo {
+  width: 200px;
+  text-align: center;
+}
+
+.author__name {
+  font-weight: 500;
+}
+
+.author__text {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .author__inner {
+    display: block;
+  }
+
+  .author__photo {
+    margin: 20px auto;
+  }
+}

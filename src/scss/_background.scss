@@ -1,0 +1,7 @@
+@import "./variables.scss";
+
+@each $colorKey, $colorValue in $colors {
+  .bg-color-#{$colorKey} {
+    background-color: #{$colorValue};
+  }
+}

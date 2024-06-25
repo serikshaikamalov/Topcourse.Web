@@ -1,0 +1,35 @@
+.forwhom__img{
+    margin-bottom: 32px;
+}
+
+.forwhom__content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+
+  .forwhom-wrapper__title {
+    margin-bottom: 24px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #1d1d1d;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 400;
+  }
+  .forwhom-wrapper__desc {
+    font-family: "Nunito Sans", sans-serif;
+    color: #1d1d1d;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .forwhom__content {
+    display: block;
+  }
+
+  .forwhom__item:not(:last-child){
+    margin-bottom: 40px;
+  }
+}

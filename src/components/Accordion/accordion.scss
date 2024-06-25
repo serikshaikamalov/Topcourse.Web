@@ -1,0 +1,27 @@
+@import "./../../scss/variables.scss";
+
+.accordion__content {
+  background-color: map-get($map: $colors, $key: "lightBlue");
+  padding: 16px;
+  list-style: inherit;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+
+.accordion__header {
+  background-color: map-get($map: $colors, $key: "lightYellow");
+  padding: 0px 32px;
+  border: 1px solid #000;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion__content {
+    display: block;
+  }
+}

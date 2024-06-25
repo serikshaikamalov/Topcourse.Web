@@ -1,0 +1,27 @@
+.certificate{
+    border: 1px solid #ddd;
+    margin: 16px 0;
+    padding: 16px;
+    .certificate__logo{
+        
+        img{
+            width: 150px;
+        }
+    }
+
+    .certificate__title{
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin: 16px 0;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+
+    .certificate__school{
+        margin: 16px 0;
+    }
+
+    .certificate__course{
+        margin: 16px 0;
+    }
+}

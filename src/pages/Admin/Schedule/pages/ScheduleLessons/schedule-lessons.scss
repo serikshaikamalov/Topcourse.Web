@@ -1,0 +1,16 @@
+.schedule__chapter {
+  ul {
+    margin-left: 1rem;
+  }
+  .schedule__lesson {
+    line-height: 50px;
+
+    & > div{
+      flex: 1;      
+    }
+
+    input{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "./resets";
+@import "./normalize";
+@import "./theme.scss";
+
+@import "./variables.scss";
+
+@import "./background";
+@import "./font-colors.scss";
+@import "./flex";
+@import "./text.scss";
+
+// Helpers
+@import "./helpers/index";
+
+@import "./components/nav.scss";
+
+:root {
+    background-color: var(--background-color);
+    color: var(--text-color)
+}
+
+@media screen and (max-width: 768px) {
+    .m-w-100 {
+        width: 100% !important;
+    }
+}

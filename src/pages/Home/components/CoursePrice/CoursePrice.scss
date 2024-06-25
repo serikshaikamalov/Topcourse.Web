@@ -1,0 +1,76 @@
+.course-price {
+  background-color: #c4fdef;
+}
+
+.course-price__title {
+  font-size: 52px;
+  line-height: 60px;
+  margin-bottom: 48px;
+}
+ul.course-price__menu {
+  li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.course-price__price {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.course-price__prices {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  & > span:first-child {
+    margin-right: 20px;
+  }
+}
+
+.course-price__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-price__old {
+  color: #a6a4a0;
+  span {
+    text-decoration: line-through;
+  }
+}
+.per-month {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 30px;
+  font-size: 15px;
+  font-style: italic;
+}
+.course-price__new {
+  margin-right: 15px;
+}
+
+.discount-period {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .course-price__header {
+    flex-direction: column-reverse;
+  }
+
+  .course-price__start-date {
+    margin-bottom: 10px;
+  }
+
+  .course-price__price {
+    font-size: 26px;
+  }
+  .course-price__prices {
+    flex-direction: column;
+  }
+  .per-month {
+    margin: 0;
+  }
+}

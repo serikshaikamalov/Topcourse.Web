@@ -1,0 +1,15 @@
+.w- {
+  @each $w in 0, 100 {
+    &#{$w} {
+      width: #{$w * 1%};
+    }
+  }
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.w-max-content {
+  width: max-content;
+}

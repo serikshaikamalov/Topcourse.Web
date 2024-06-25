@@ -1,0 +1,40 @@
+image: node:18
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm ci
+    - CI='' npm run build
+  artifacts:
+    paths:
+      - build
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  before_script:
+    - apt-get update
+    - "command -v ssh-agent >/dev/null || ( apk add --update openssh )"
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan $VM_IPADDRESS >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - apt install zip
+    - zip -r build.zip build
+    - ssh $SSH_USER@$VM_IPADDRESS "cd $PATH_TO_FRONTEND && rm -rf build && mkdir build && exit"
+    - scp build.zip $SSH_USER@$VM_IPADDRESS:$PATH_TO_FRONTEND/build
+    - ssh $SSH_USER@$VM_IPADDRESS "cd $PATH_TO_FRONTEND/build && unzip build.zip -d .. && exit"
+  only:
+    - master

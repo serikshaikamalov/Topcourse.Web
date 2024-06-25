@@ -1,0 +1,17 @@
+.contact-form {
+  padding: 30px;
+
+  & > h2 {
+    padding: 0;
+  }
+}
+.text-danger {
+  color: #dc3545;
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form__save-button {
+    width: 100%;
+  }
+}

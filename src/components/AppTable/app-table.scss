@@ -1,0 +1,28 @@
+@media screen and (max-width: 991px) {
+    table {
+        thead {
+            display: none !important;
+        }
+
+        tr {
+            display: flex !important;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            td {
+                display: flex !important;
+                width: auto;
+                justify-content: space-between;
+                text-align: right;
+                border-bottom: 1px solid #f5f5f5;
+
+                &::before {
+                    content: attr(data-label);
+                    font-weight: 600;
+                    padding-right: .5rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

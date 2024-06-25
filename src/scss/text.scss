@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+
+.fw- {
+  @each $w in $font-weights {
+    &#{$w} {
+      font-weight: $w;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-muted{
+  color: map-get($map: $colors, $key: 'gray')
+}
+.text-right{
+  text-align: right;
+}
+
+.fs {
+  @each $i in $space-list {
+    &-#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.breadcrumb {
+  a {
+    &:not(:last-child)::after {
+      margin-right: 10px;
+      margin-left: 10px;
+      content: ">";
+    }
+    color: #696969;
+    font-size: 13px;
+  }
+  margin-bottom: 30px;
+}

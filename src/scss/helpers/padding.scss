@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.p {
+  @each $i in $space-list {
+    &-#{$i} {
+      padding: #{$i}px;
+    }
+
+    @each $shortPosition, $longPosition in $sides {
+      &-#{$shortPosition}-#{$i} {
+        padding-#{$longPosition}: #{$i}px;
+      }
+    }
+  }
+}
+
+.m-auto {
+  margin: auto;
+}

@@ -1,0 +1,26 @@
+$colors: (
+  "red": #a60a3d,
+  "black": #1d1d1d,
+  "yellow": #ffd873,
+  "lightYellow": #ffecbf,
+  "lightBlue": #f4fbff,
+  "blue": #3d3bff,
+  "dark": rgb(33, 37, 41),
+  "green": #00b7a1,
+  "gray": #6c757d,
+);
+
+$font-weights: 400, 500, 600, 700, 800;
+
+$space-list: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64;
+
+$positions: "top", "right", "bottom", "left";
+
+$sides: (
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left",
+);
+
+$border-color: #dee2e6;

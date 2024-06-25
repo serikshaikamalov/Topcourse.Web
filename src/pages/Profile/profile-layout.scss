@@ -1,0 +1,12 @@
+.profile-menu {
+    position: sticky;
+    background-color: var(--background-color);
+    top: 96px;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-menu {
+        width: 100%;
+        top: 84px;
+    }
+}

@@ -1,0 +1,6 @@
+.lesson__link{
+    &.inactive{
+        opacity: 0.5;
+        display: none;
+    }
+}

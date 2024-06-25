@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 16px;
+  height: 84px;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  @extend .flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  @extend .flex;
+  flex-direction: column;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.flex-center {
+  align-items: center;
+}
+.flex-row-center {
+  justify-content: center;
+}
+
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+
+.flexr{
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .flexr {
+    flex-direction: column;
+  }
+}

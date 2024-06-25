@@ -1,0 +1,39 @@
+.course__chapter-name {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.course__chapter-lessons {
+  margin-left: 0.5rem;
+}
+.course__chapter-lesson {
+  padding: 4px;
+  & > a {
+    display: flex;
+    gap: 6px;
+    flex-wrap: nowrap;
+
+    & > svg {
+      flex: none;
+    }
+  }
+}
+
+.drawer-chapter-list-item {
+  cursor: pointer;
+  text-align: left;
+  padding: 0 16px;
+}
+
+.drawer-course-paper {
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .drawer-course-paper {
+    width: 100%;
+  }
+}
+
+.course__chapter-lessons:has(.course__chapter-lesson .active) {
+  display: block;
+}

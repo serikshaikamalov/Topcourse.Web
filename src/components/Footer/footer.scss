@@ -1,0 +1,38 @@
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer__title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.foooter_link{
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+    }
+
+    .footer > div:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .footer__title{
+        margin-bottom: 5px;
+    }
+}

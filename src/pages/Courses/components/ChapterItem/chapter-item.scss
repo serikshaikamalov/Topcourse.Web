@@ -1,0 +1,12 @@
+.chapter-item{
+    border-bottom: 1px solid #ddd;
+    h2{
+        cursor: pointer;
+    }
+    ul{
+        margin-left: 1rem;
+    }
+    ul > li{
+        margin-bottom: 16px;
+    }
+}
