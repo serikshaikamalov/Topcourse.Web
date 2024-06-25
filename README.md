@@ -1,5 +1,8 @@
 ## TopCourse: Your Gateway to Comprehensive Education
 
+<img width="1439" alt="image" src="https://github.com/serikshaikamalov/Topcourse.Web/assets/11631958/520d0c68-7968-439a-bfe7-02dd7b07d8c2">
+
+
 Welcome to TopCourse, the all-in-one learning platform designed to cater to the diverse needs of educators and learners alike. Our platform combines intuitive design with powerful features to create a seamless and engaging educational experience.
 
 ## Intuitive User Interface and Experience
